@@ -1,0 +1,195 @@
+[
+  {
+    "id": "Jkf3BlvTjbZO",
+    "path": "/project/map",
+    "parentId": null
+  },
+  {
+    "id": "hog4e968HJJB",
+    "path": "/notify/index",
+    "parentId": null
+  },
+  {
+    "id": "bbAUr0bCxmdm",
+    "path": "",
+    "children": [
+      {
+        "id": "7IG3EGbYFLDd",
+        "path": "/notice/index",
+        "parentId": "bbAUr0bCxmdm"
+      },
+      {
+        "id": "Y2UJ6neTWSRf",
+        "path": "/idea/index",
+        "children": [],
+        "parentId": "bbAUr0bCxmdm"
+      },
+      {
+        "id": "cGPj-b7iPQ9W",
+        "path": "/chart/idea",
+        "parentId": "bbAUr0bCxmdm"
+      }
+    ],
+    "parentId": null
+  },
+  {
+    "id": "q25l5oaSoLhD",
+    "path": "",
+    "query": "",
+    "children": [
+      {
+        "id": "7GWtBGR31XGH",
+        "path": "/shortlist-report/index",
+        "parentId": "q25l5oaSoLhD"
+      },
+      {
+        "id": "u47V6uQBbLMp",
+        "path": "/shortlist/index",
+        "children": [],
+        "parentId": null
+      },
+      {
+        "id": "NfVR8vfMJ3TP",
+        "path": "/idea/shortlist",
+        "parentId": "q25l5oaSoLhD"
+      },
+      {
+        "id": "CYa4cNeWSJXA",
+        "path": "/vote-rule/index",
+        "parentId": "q25l5oaSoLhD"
+      },
+      {
+        "id": "Z0tlYy3zf94E",
+        "path": "/vote/index",
+        "parentId": "q25l5oaSoLhD"
+      },
+      {
+        "id": "U9jZmPfyLfnj",
+        "path": "/vote-report/index",
+        "parentId": "q25l5oaSoLhD"
+      },
+      {
+        "id": "jZP9WoGXLC4J",
+        "path": "/vote-comment/index",
+        "parentId": "q25l5oaSoLhD"
+      },
+      {
+        "id": "v8t63VJVLEKu",
+        "path": "/vote-parent/index",
+        "parentId": "q25l5oaSoLhD"
+      }
+    ],
+    "parentId": null
+  },
+  {
+    "id": "Cs6RWk1Xso83",
+    "path": "",
+    "children": [
+      {
+        "id": "54iOKoQw_i6K",
+        "path": "/review-team/index",
+        "children": [],
+        "parentId": "Cs6RWk1Xso83"
+      },
+      {
+        "id": "uoVEBF-LqPV3",
+        "path": "/review-plan/index",
+        "parentId": null
+      },
+      {
+        "id": "fbfQpW86GZET",
+        "path": "/review-exec/index",
+        "children": [],
+        "parentId": null
+      },
+      {
+        "id": "D4oLog1BLOXw",
+        "path": "/review/index",
+        "parentId": null
+      },
+      {
+        "id": "85NOF7t57MCQ",
+        "path": "/tour/index",
+        "children": [],
+        "parentId": null
+      }
+    ],
+    "parentId": null
+  },
+  {
+    "id": "zE07BbAW4uCe",
+    "children": [
+      {
+        "id": "mOV9CkWOdQTy",
+        "path": "/project/index",
+        "children": [],
+        "parentId": "zE07BbAW4uCe"
+      },
+      {
+        "id": "O8mJnsHlTDS8",
+        "path": "/review-reply/index",
+        "parentId": "zE07BbAW4uCe"
+      },
+      {
+        "id": "BhC4UQdkw8CC",
+        "path": "/chart/review",
+        "parentId": "zE07BbAW4uCe"
+      }
+    ],
+    "parentId": null
+  },
+  {
+    "id": "lTsDaSpN0MRI",
+    "children": [
+      {
+        "id": "RMlr30imW7be",
+        "path": "/project-kpi/index",
+        "parentId": "lTsDaSpN0MRI"
+      },
+      {
+        "id": "R0Xh1bUktpSN",
+        "path": "/budget/index",
+        "parentId": "lTsDaSpN0MRI"
+      },
+      {
+        "id": "xkJq43ZnEJCq",
+        "path": "/audit/index",
+        "parentId": "lTsDaSpN0MRI"
+      },
+      {
+        "id": "__ZvBzm0Gsbo",
+        "path": "/shortlist-show/index",
+        "parentId": "lTsDaSpN0MRI"
+      },
+      {
+        "id": "E_Udsc9ueYIL",
+        "path": "/smile/index",
+        "query": "",
+        "parentId": "lTsDaSpN0MRI"
+      }
+    ],
+    "parentId": null
+  },
+  {
+    "id": "R5S4lIp7GLDv",
+    "path": "/chart/index",
+    "children": [],
+    "parentId": null
+  },
+  {
+    "id": "SNlormM4yOm6",
+    "children": [
+      {
+        "id": "9kNN8KrF-kjc",
+        "path": "/highlight/index",
+        "parentId": "SNlormM4yOm6"
+      },
+      {
+        "id": "6ai5xmvNT-Cv",
+        "path": "/file/index",
+        "parentId": "SNlormM4yOm6"
+      }
+    ],
+    "parentId": null
+  }
+]
