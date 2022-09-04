@@ -32,5 +32,10 @@
     "id": "R5S4lIp7GLDv",
     "path": "/chart/index",
     "parentId": "zE07BbAW4uCe"
+  },
+  {
+    "id": "V1StGXR8",
+    "path": "/chart/index/active",
+    "parentId": "R5S4lIp7GLDv"
   }
 ]
