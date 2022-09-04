@@ -1,6 +1,6 @@
 {
   "name": "@axolo/tree-array",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Yueming Fang",
   "license": "MIT",
   "description": "An array have children key and parentId key like tree.",
