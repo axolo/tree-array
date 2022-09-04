@@ -15,6 +15,11 @@
     "array to tree",
     "get parents"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axolo/tree-array.git"
+  },
+  "homepage": "https://github.com/axolo/tree-array#readme",
   "main": "src/index.js",
   "scripts": {
     "test": "node test/index.js"
