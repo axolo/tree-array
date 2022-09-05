@@ -1,5 +1,5 @@
 const tree2array = (tree, options) => {
-  if (!tree?.length) return tree
+  if (!Array.isArray(tree)) return tree
   options = { childrenKey: 'children', ...options }
   const { childrenKey } = options
   return tree.flatMap(item => item[childrenKey]
