@@ -5,6 +5,7 @@
   "license": "MIT",
   "description": "An array have children key and parentId key like tree.",
   "keywords": [
+    "list",
     "tree",
     "array",
     "children",
@@ -13,6 +14,8 @@
     "parentId",
     "tree to array",
     "array to tree",
+    "list to tree",
+    "tree to list"
     "get parents"
   ],
   "repository": {
