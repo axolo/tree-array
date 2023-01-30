@@ -1,47 +1,38 @@
-[
-  {
-    "id": "cGPj-b7iPQ9W",
-    "path": "/chart/idea",
-    "parentId": "bbAUr0bCxmdm"
-  },
-  {
-    "id": "zE07BbAW4uCe",
-    "parentId": null,
-    "children": [
-      {
-        "id": "R5S4lIp7GLDv",
-        "path": "/chart/index",
-        "parentId": "zE07BbAW4uCe",
-        "children": [
-          {
-            "id": "V1StGXR8",
-            "path": "/chart/index/active",
-            "parentId": "R5S4lIp7GLDv"
-          }
-        ]
-      },
-      {
-        "id": "BhC4UQdkw8CC",
-        "path": "/chart/review",
-        "parentId": "zE07BbAW4uCe"
-      },
-      {
-        "id": "mOV9CkWOdQTy",
-        "path": "/project/index",
-        "parentId": "zE07BbAW4uCe"
-      }
-    ]
-  },
-  {
-    "id": "lTsDaSpN0MRI",
-    "parentId": null,
-    "children": [
-      {
-        "id": "E_Udsc9ueYIL",
-        "path": "/smile/index",
-        "query": "",
-        "parentId": "lTsDaSpN0MRI"
-      }
-    ]
-  }
-]
+[{
+  "id": "chart",
+  "path": "/chart",
+  "parentId": null,
+  "children": [{
+    "id": "chartIndex",
+    "path": "/chart/index",
+    "parentId": "chart",
+    "children": [{
+      "id": "chartIndexActive",
+      "path": "/chart/index/active",
+      "parentId": "chartIndex",
+      "children": [{
+        "id": "chartIndexActiveMy",
+        "path": "/chart/index/active/my",
+        "parentId": "chartIndexActive"
+      }]
+    }]
+  }, {
+    "id": "chartReview",
+    "path": "/chart/review",
+    "parentId": "chart"
+  }, {
+    "id": "chartProject",
+    "path": "/chart/project",
+    "parentId": "chart"
+  }]
+}, {
+  "id": "smile",
+  "path": "/smile",
+  "parentId": null,
+  "children": [{
+    "id": "smileIndex",
+    "path": "/smile/index",
+    "query": "test",
+    "parentId": "smile"
+  }]
+}]
