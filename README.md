@@ -34,6 +34,10 @@ find parents from array by child id
 
 get max deep of tree
 
+### arrayDeep(array, [options], [deep = 1])
+
+get max deep of array
+
 ## options
 
   params    |  type  | default  | description

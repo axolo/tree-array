@@ -1,6 +1,6 @@
 {
   "name": "@axolo/tree-array",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "An array have children key and parentId key like tree.",
   "author": "Yueming Fang",
   "license": "MIT",
@@ -20,7 +20,8 @@
     "get parents",
     "array2tree",
     "tree2array",
-    "deep of tree"
+    "deep of tree",
+    "deep of array"
   ],
   "scripts": {
     "test": "node test/index.js"
