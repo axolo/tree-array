@@ -22,7 +22,9 @@
     "array2tree",
     "tree2array",
     "deep of tree",
-    "deep of array"
+    "deep of array",
+    "path of tree",
+    "index of tree"
   ],
   "scripts": {
     "test": "node test/index.js"
