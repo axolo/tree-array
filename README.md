@@ -38,6 +38,10 @@ get max deep of tree
 
 get max deep of array
 
+### treePath(tree, id, [options])
+
+get index path of tree by id
+
 ## options
 
   params    |  type  | default  | description

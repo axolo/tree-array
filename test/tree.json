@@ -7,6 +7,10 @@
     "path": "/chart/index",
     "parentId": "chart",
     "children": [{
+      "id": "chartIndexTop",
+      "path": "/chart/index/top",
+      "parentId": "chartIndex"
+    }, {
       "id": "chartIndexActive",
       "path": "/chart/index/active",
       "parentId": "chartIndex",
@@ -23,7 +27,25 @@
   }, {
     "id": "chartProject",
     "path": "/chart/project",
-    "parentId": "chart"
+    "parentId": "chart",
+    "children": [{
+      "id": "chartProjectYou",
+      "path": "/chart/project/you",
+      "parentId": "chartProject"
+    }, {
+      "id": "chartProjectMy",
+      "path": "/chart/project/my",
+      "parentId": "chartProject",
+      "children": [{
+        "id": "chartProjectMyOne",
+        "path": "/chart/project/my/one",
+        "parentId": "chartProjectMy"
+      }, {
+        "id": "chartProjectMyTwo",
+        "path": "/chart/project/my/two",
+        "parentId": "chartProjectMy"
+      }]
+    }]
   }]
 }, {
   "id": "smile",
