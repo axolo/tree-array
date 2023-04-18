@@ -40,7 +40,11 @@ get max deep of array
 
 ### treePath(tree, id, [options])
 
-get index path of tree by id
+get path of index from tree by id
+
+### treeNode(tree, id, [options])
+
+get path of id from tree by id
 
 ## options
 
