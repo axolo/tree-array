@@ -1,4 +1,4 @@
-function treeNode(tree, targetId, options, currentPath = []) {
+const treeNode = (tree, targetId, options, currentPath = []) => {
   options = { idKey: 'id', childrenKey: 'children', ...options }
   const { idKey, childrenKey } = options
 
