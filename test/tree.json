@@ -1,4 +1,8 @@
 [{
+  "id": "home",
+  "path": "/home",
+  "parentId": null
+}, {
   "id": "chart",
   "path": "/chart",
   "parentId": null,

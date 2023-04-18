@@ -1,35 +1,17 @@
-const treePath = (tree, id, options) => {
-  options = {
-    idKey: 'id',
-    parentKey: 'parentId',
-    childrenKey: 'children',
-    ...options
-  }
-  const ancestorIndexes = []
-  let node = findNode(tree, id, options)
-  while (node) {
-    const parent = findNode(tree, node[options.parentKey], options)
-    if (parent) {
-      const index = parent[options.childrenKey].findIndex(child => child[options.idKey] === node[options.idKey])
-      ancestorIndexes.unshift(index)
-    }
-    node = parent
-  }
-  return ancestorIndexes
-}
+const treePath = (tree, targetId, options, currentPath = []) => {
+  options = { idKey: 'id', childrenKey: 'children', ...options }
+  const { idKey, childrenKey } = options
 
-const findNode = (tree, id, options) => {
-  for (let node of tree) {
-    if (node[options.idKey] === id) {
-      return node
-    } else if (node[options.childrenKey]) {
-      const childNode = findNode(node[options.childrenKey], id, options)
-      if (childNode) {
-        return childNode
-      }
+  for (let i = 0; i < tree.length; i++) {
+    currentPath.push(i) // 将当前节点索引号加入路径
+    if (tree[i][idKey] === targetId) return currentPath // 找到目标ID，返回路径
+    if (tree[i][childrenKey]) {
+      const result = treePath(tree[i][childrenKey], targetId, options, currentPath) // 递归遍历子节点
+      if (result) return result // 找到目标ID，返回路径
     }
+    currentPath.pop() // 回溯，将当前节点索引号从路径中移除
   }
-  return null
+  return null // 遍历完所有节点，未找到目标ID，返回null
 }
 
 module.exports = treePath
