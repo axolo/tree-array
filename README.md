@@ -11,7 +11,7 @@ npm i @axolo/tree-array
 ## usage
 
 ```js
-const { tree2array, array2tree } = require('@axolo/tree-array')
+import { tree2array, array2tree } from '@axolo/tree-array'
 const array = array2tree([/* array */])
 const tree = tree2array([/* tree */])
 ```
