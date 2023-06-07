@@ -23,12 +23,12 @@ const tree = tree2array([/* tree */])
 | `array2tree(array, [options])`            | tree   | array to tree                                              |
 | `arrayDeep(array, [options], [deep = 1])` | int    | get max deep of array                                      |
 | `arrayNode(array, id, [options])`         | array  | get path of id from array by id, like `[id1, id12, id121]` |
-| `arrayParents(childId, array, [options])` | array  | find parents from array by child id                        |
+| `arrayParents(id, array, [options])`      | array  | find parents from array by id                              |
 | `tree2array(tree, [options])`             | array  | tree to array                                              |
 | `treeDeep(tree, [options], [deep = 1])`   | int    | get max deep of tree                                       |
 | `treeNode(tree, id, [options])`           | array  | get path of id from tree by id, like `[id1, id12, id121]`  |
 | `treePath(tree, id, [options])`           | array  | get path of index from tree by id, like `[0, 2, 1]`        |
-| `treeSub(tree, id, [options])`            | object | get sub tree of id, like `{id, parentId, children: [] }`   |
+| `treeSub(tree, id, [options])`            | object | get sub tree by id, like `{ id, parentId, children: [] }`  |
 
 ## options
 
