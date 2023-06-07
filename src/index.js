@@ -1,17 +1,21 @@
 const array2tree = require('./array2tree')
-const arrayParents = require('./array-parents')
 const arrayDeep = require('./array-deep')
+const arrayNode = require('./array-node')
+const arrayParents = require('./array-parents')
 const tree2array = require('./tree2array')
 const treeDeep = require('./tree-deep')
-const treePath = require('./tree-path')
 const treeNode = require('./tree-node')
+const treePath = require('./tree-path')
+const treeSub = require('./tree-sub')
 
 module.exports = {
-  tree2array,
   array2tree,
-  arrayParents,
-  treeDeep,
   arrayDeep,
+  arrayNode,
+  arrayParents,
+  tree2array,
+  treeDeep,
+  treeNode,
   treePath,
-  treeNode
+  treeSub
 }
