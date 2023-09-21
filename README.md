@@ -39,6 +39,8 @@ parentKey   | string | parentId | key of parentId
 childrenKey | string | children | key of children
 leafKey     | string | leaf     | key of leaf
 leafValue   | any    | true     | value of leaf
+deepKey     | string | deep     | key of deep
+deepValue   | number | 0        | value of deep
 
 ## data
 
