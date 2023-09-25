@@ -20,7 +20,7 @@ const tree = tree2array([/* tree */])
 
 |                 function                  | return |                        description                         |
 | ----------------------------------------- | ------ | ---------------------------------------------------------- |
-| `array2tree(array, [options])`            | tree   | array to tree                                              |
+| `array2tree(array, [options])`            | tree   | array to tree with leaf and deep                           |
 | `arrayDeep(array, [options], [deep = 1])` | int    | get max deep of array                                      |
 | `arrayNode(array, id, [options])`         | array  | get path of id from array by id, like `[id1, id12, id121]` |
 | `arrayParents(id, array, [options])`      | array  | find parents from array by id                              |
