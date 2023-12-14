@@ -7,4 +7,4 @@ const arrayParents = (id, array = [], options, parents = []) => {
   return arrayParents(item[parentKey], array, options, parents)
 }
 
-module.exports = arrayParents
+export default arrayParents

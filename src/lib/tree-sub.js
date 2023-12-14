@@ -16,4 +16,4 @@ const treeSub = (tree, id, options) => {
   return null
 }
 
-module.exports = treeSub
+export default treeSub

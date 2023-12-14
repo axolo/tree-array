@@ -8,4 +8,4 @@ const arrayDeep = (array, options, deep = 1) => {
   return arrayDeep(temp, options, deep)
 }
 
-module.exports = arrayDeep
+export default arrayDeep

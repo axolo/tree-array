@@ -1,6 +1,0 @@
-require('./tree2array')
-require('./array2tree')
-require('./array-parents')
-require('./tree-deep')
-require('./array-deep')
-require('./tree2array2tree')

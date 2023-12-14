@@ -7,4 +7,4 @@ const arrayNode = (array, id, options, parents = []) => {
   return arrayNode(array, item[parentKey], options, parents)
 }
 
-module.exports = arrayNode
+export default arrayNode

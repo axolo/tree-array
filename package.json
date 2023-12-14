@@ -1,11 +1,14 @@
 {
   "name": "@axolo/tree-array",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "An array have children key and parentId key like tree.",
   "author": "Yueming Fang",
   "license": "MIT",
-  "main": "src/index.js",
-  "files": ["src"],
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "src"
+  ],
   "keywords": [
     "tree",
     "array",
@@ -20,12 +23,21 @@
     "path of tree",
     "sub tree"
   ],
-  "scripts": {
-    "test": "node test/index.js"
-  },
   "homepage": "https://github.com/axolo/tree-array#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/axolo/tree-array.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@axolo/json-editor-vue": "^0.2.1",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "sass": "^1.69.5",
+    "vite": "^5.0.8",
+    "vue": "^3.3.11"
   }
 }

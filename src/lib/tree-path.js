@@ -14,4 +14,4 @@ const treePath = (tree, targetId, options, currentPath = []) => {
   return null // 遍历完所有节点，未找到目标ID，返回null
 }
 
-module.exports = treePath
+export default treePath

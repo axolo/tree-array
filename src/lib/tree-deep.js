@@ -16,4 +16,4 @@ const treeDeep = (tree, options, deep = 1) => {
   return treeDeep(temp, options, deep)
 }
 
-module.exports = treeDeep
+export default treeDeep

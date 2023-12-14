@@ -32,4 +32,4 @@ const array2tree = (array, options) => {
   return tree(roots, deepValue)
 }
 
-module.exports = array2tree
+export default array2tree

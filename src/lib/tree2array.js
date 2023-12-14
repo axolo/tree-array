@@ -10,4 +10,4 @@ const tree2array = (tree, options) => {
   return array
 }
 
-module.exports = tree2array
+export default tree2array
