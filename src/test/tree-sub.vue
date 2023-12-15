@@ -1,6 +1,6 @@
 <script>
 import JsonEditor from '@axolo/json-editor-vue'
-import treeArray from '../lib'
+import { treeSub } from '../lib'
 import tree from './data-tree.json'
 
 export default {
@@ -9,7 +9,7 @@ export default {
   },
   data() {
     return {
-      sub: treeArray.treeSub(tree, 'chartIndex')
+      sub: treeSub(tree, 'chartIndex')
     }
   }
 }

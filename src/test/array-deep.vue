@@ -1,6 +1,6 @@
 <script>
 import JsonEditor from '@axolo/json-editor-vue'
-import treeArray from '../lib'
+import { arrayDeep } from '../lib'
 import array from './data-array.json'
 
 export default {
@@ -9,7 +9,7 @@ export default {
   },
   data() {
     return {
-      deep: treeArray.arrayDeep(array)
+      deep: arrayDeep(array)
     }
   }
 }

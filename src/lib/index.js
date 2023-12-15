@@ -8,7 +8,7 @@ import treeNode from './tree-node'
 import treePath from './tree-path'
 import treeSub from './tree-sub'
 
-export default {
+export {
   array2tree,
   arrayDeep,
   arrayNode,

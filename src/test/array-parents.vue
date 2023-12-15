@@ -1,6 +1,6 @@
 <script>
 import JsonEditor from '@axolo/json-editor-vue'
-import treeArray from '../lib'
+import { arrayParents } from '../lib'
 import array from './data-array.json'
 
 export default {
@@ -9,7 +9,7 @@ export default {
   },
   data() {
     return {
-      parents: treeArray.arrayParents('chartIndexActiveMy', array)
+      parents: arrayParents('chartIndexActiveMy', array)
     }
   }
 }

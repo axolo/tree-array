@@ -76,7 +76,10 @@ export default {
     <div class="body">
       <component :is="tests[active].component" />
     </div>
-    <address>{{ `${name}@${version}` }}</address>
+
+    <address class="foot">
+      {{ `${name}@${version}` }}
+    </address>
   </div>
 </template>
 
@@ -100,6 +103,7 @@ body {
     padding: 0.5em 0;
     background-color: #fff;
     a {
+      color: #333;
       text-decoration: none;
     }
   }
@@ -110,22 +114,26 @@ body {
       list-style: none;
       display: flex;
       align-items: center;
-      gap: 0.25em;
       li {
         cursor: pointer;
+        padding: 0.25em 1em;
         display: inline-block;
-        padding: 0.25em 0.75em;
+        text-align: center;
+        border: 1px solid#666;
         color: #fff;
         background-color: #666;
       }
       li.active {
         color: #666;
         background-color: #fff;
-        border: 1px solid#666;
       }
     }
   }
-  address {
+  .body {
+    max-height: 40em;
+    overflow-y: scroll;
+  }
+  .foot {
     margin: 1em 0;
     color: #666;
     font-size: small;
