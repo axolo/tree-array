@@ -34,10 +34,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@axolo/json-editor-vue": "^0.2.3",
     "@vitejs/plugin-vue": "^4.5.2",
     "sass": "^1.69.5",
     "vite": "^5.0.8",
-    "vue": "^3.3.11"
+    "vue": "^3.3.11",
+    "vue-json-pretty": "^2.3.0"
   }
 }
