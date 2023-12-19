@@ -16,6 +16,13 @@ const array = array2tree([/* array */])
 const tree = tree2array([/* tree */])
 ```
 
+> use as CommonJS
+
+```js
+const { tree2array, array2tree } = require('@axolo/tree-array/dist/index.umd.cjs')
+const array = array2tree(tree2array([/* tree */]))
+```
+
 ## api
 
 |                 function                  | return |                        description                         |
