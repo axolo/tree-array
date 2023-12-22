@@ -1,3 +1,4 @@
+import clone from 'lodash.clonedeep'
 import array2tree from './array2tree'
 import arrayDeep from './array-deep'
 import arrayNode from './array-node'
@@ -9,6 +10,7 @@ import treePath from './tree-path'
 import treeSub from './tree-sub'
 
 export {
+  clone,
   array2tree,
   arrayDeep,
   arrayNode,

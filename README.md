@@ -27,6 +27,7 @@ const array = array2tree(tree2array([/* tree */]))
 
 |                 function                  | return |                        description                         |
 | ----------------------------------------- | ------ | ---------------------------------------------------------- |
+| `clone(object)`                           | object | [lodash.clonedeep] object, array ...                       |
 | `array2tree(array, [options])`            | tree   | array to tree with leaf and deep                           |
 | `arrayDeep(array, [options], [deep = 1])` | int    | get max deep of array                                      |
 | `arrayNode(array, id, [options])`         | array  | get path of id from array by id, like `[id1, id12, id121]` |
@@ -137,3 +138,5 @@ The data format **MUST** like example with key defined in options.
 
 > Yueming Fang
 > 2022-09-04
+
+[lodash.clonedeep]: https://www.npmjs.com/package/lodash.clonedeep

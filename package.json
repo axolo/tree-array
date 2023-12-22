@@ -1,6 +1,6 @@
 {
   "name": "@axolo/tree-array",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "An array have children key and parentId key like tree.",
   "author": "Yueming Fang",
   "license": "MIT",
@@ -36,8 +36,11 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
     "sass": "^1.69.5",
-    "vite": "^5.0.8",
-    "vue": "^3.3.11",
+    "vite": "^5.0.10",
+    "vue": "^3.3.13",
     "vue-json-pretty": "^2.3.0"
+  },
+  "dependencies": {
+    "lodash.clonedeep": "^4.5.0"
   }
 }
