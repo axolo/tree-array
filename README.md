@@ -16,7 +16,21 @@ const array = array2tree([/* array */])
 const tree = tree2array([/* tree */])
 ```
 
-> use as CommonJS
+> Vue CLI
+
+By default `babel-loader` ignores all files inside `node_modules`.
+You can enable [transpileDependencies] to avoid unexpected untranspiled code from third-party dependencies.
+
+```js
+// vue.config.js
+module.exports = {
+  transpileDependencies: ['@axolo/tree-array']
+}
+```
+
+> CommonJS
+
+ES Modules is not supported in CommonJS. You can use UMD version.
 
 ```js
 const { tree2array, array2tree } = require('@axolo/tree-array/dist/index.umd.cjs')
@@ -140,3 +154,4 @@ The data format **MUST** like example with key defined in options.
 > 2022-09-04
 
 [lodash.clonedeep]: https://www.npmjs.com/package/lodash.clonedeep
+[transpileDependencies]: https://cli.vuejs.org/config/#transpiledependencies
