@@ -12,8 +12,8 @@ npm i @axolo/tree-array
 
 ```js
 import { tree2array, array2tree } from '@axolo/tree-array'
-const array = array2tree([/* array */])
-const tree = tree2array([/* tree */])
+const tree = array2tree([/* array */])
+const array = tree2array([/* tree */])
 ```
 
 > Vue CLI
@@ -34,7 +34,7 @@ ES Modules is not supported in CommonJS. You can use UMD version.
 
 ```js
 const { tree2array, array2tree } = require('@axolo/tree-array/dist/index.umd.cjs')
-const array = array2tree(tree2array([/* tree */]))
+const tree = array2tree(tree2array([/* tree */]))
 ```
 
 ## api
