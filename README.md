@@ -46,7 +46,7 @@ const tree = array2tree(tree2array([/* tree */]))
 | `arrayDeep(array, [options], [deep = 1])` | int    | get max deep of array                                      |
 | `arrayNode(array, id, [options])`         | array  | get path of id from array by id, like `[id1, id12, id121]` |
 | `arrayParents(id, array, [options])`      | array  | find parents from array by id                              |
-| `tree2array(tree, [options])`             | array  | tree to array                                              |
+| `tree2array(tree, [options])`             | array  | tree to array with leaf and parentId                       |
 | `treeDeep(tree, [options], [deep = 1])`   | int    | get max deep of tree                                       |
 | `treeNode(tree, id, [options])`           | array  | get path of id from tree by id, like `[id1, id12, id121]`  |
 | `treePath(tree, id, [options])`           | array  | get path of index from tree by id, like `[0, 2, 1]`        |

@@ -1,18 +1,29 @@
-import cloneDeep from 'lodash.clonedeep'
-
-const tree2array = (tree, options) => {
+const tree2array = (tree, options, parentId = null) => {
   if (!Array.isArray(tree)) return tree
 
-  options = { childrenKey: 'children', ...options }
-  const { childrenKey } = options
-  const clone = cloneDeep(tree)
+  options = {
+    childrenKey: 'children',
+    parentKey: 'parentId',
+    leafKey: 'leaf',
+    leafValue: true,
+    ...options
+  }
+  const { childrenKey, parentKey, leafKey, leafValue } = options
 
-  const array = clone.flatMap(item => item[childrenKey]
-    ? [item, ...tree2array(item[childrenKey], options)]
-    : item)
-  array.forEach(a => delete a[childrenKey])
-
-  return array
+  let result = []
+  tree.forEach(node => {
+    let newNode = { ...node, [parentKey]: parentId }
+    if (node[childrenKey] && node[childrenKey].length > 0) {
+      newNode[leafKey] = false
+      delete newNode[childrenKey]
+      result.push(newNode)
+      result = result.concat(tree2array(node[childrenKey], options, node.id));
+    } else {
+      newNode[leafKey] = leafValue
+      result.push(newNode)
+    }
+  })
+  return result
 }
 
 export default tree2array
