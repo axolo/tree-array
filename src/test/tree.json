@@ -1,6 +1,7 @@
 [{
   "id": "home",
   "path": "/home",
+  "test": true,
   "parentId": null
 }, {
   "id": "chart",

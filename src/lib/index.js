@@ -1,4 +1,5 @@
 import clone from 'lodash.clonedeep'
+import randomId from './random-id'
 import array2tree from './array2tree'
 import arrayDeep from './array-deep'
 import arrayNode from './array-node'
@@ -11,6 +12,7 @@ import treeSub from './tree-sub'
 
 export {
   clone,
+  randomId,
   array2tree,
   arrayDeep,
   arrayNode,
