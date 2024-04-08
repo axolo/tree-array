@@ -1,7 +1,6 @@
 [{
   "id": "home",
   "path": "/home",
-  "test": true,
   "parentId": null
 }, {
   "id": "chart",
@@ -36,7 +35,8 @@
     "children": [{
       "id": "chartProjectYou",
       "path": "/chart/project/you",
-      "parentId": "chartProject"
+      "parentId": "chartProject",
+      "test": true
     }, {
       "id": "chartProjectMy",
       "path": "/chart/project/my",
@@ -59,7 +59,7 @@
   "children": [{
     "id": "smileIndex",
     "path": "/smile/index",
-    "query": "test",
-    "parentId": "smile"
+    "parentId": "smile",
+    "test": true
   }]
 }]

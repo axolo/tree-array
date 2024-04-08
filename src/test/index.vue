@@ -1,4 +1,5 @@
 <script>
+import cloneDeep from 'lodash.clonedeep'
 import VueJsonPretty from 'vue-json-pretty';
 import 'vue-json-pretty/lib/styles.css';
 import { name, version, homepage } from '../../package.json'
@@ -10,6 +11,7 @@ import {
   arrayNode,
   arrayDeep,
   tree2array,
+  treeFilter,
   treeSub,
   treeNode,
   treePath,
@@ -34,6 +36,7 @@ export default {
         { name: 'arrayDeep', result: arrayDeep(array) },
         { name: 'tree', result: tree },
         { name: 'tree2array', result: tree2array(tree) },
+        { name: 'treeFilter', result: treeFilter(cloneDeep(tree), i => !i.test) },
         { name: 'treeSub', result: treeSub(tree, 'chartIndex') },
         { name: 'treeNode', result: treeNode(tree, 'chartProjectMyTwo') },
         { name: 'treePath', result: treePath(tree, 'chartProjectMyTwo') },
@@ -101,7 +104,7 @@ body {
       align-items: center;
       li {
         cursor: pointer;
-        padding: 0.25em 1em;
+        padding: 0.25em 0.5em;
         display: inline-block;
         text-align: center;
         border: 1px solid#666;

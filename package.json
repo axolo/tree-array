@@ -1,6 +1,6 @@
 {
   "name": "@axolo/tree-array",
-  "version": "0.3.5",
+  "version": "0.4.0",
   "description": "An array have children key and parentId key like tree.",
   "author": "Yueming Fang",
   "license": "MIT",
@@ -10,15 +10,11 @@
     "dist"
   ],
   "keywords": [
-    "clone",
-    "deep clone",
     "random id",
     "random key",
     "random string",
     "tree",
     "array",
-    "children",
-    "parents",
     "array2tree",
     "array to tree",
     "tree2array",
@@ -26,7 +22,8 @@
     "get parents",
     "deep of tree",
     "path of tree",
-    "sub tree"
+    "sub tree",
+    "filter tree"
   ],
   "homepage": "https://github.com/axolo/tree-array#readme",
   "repository": {
@@ -39,13 +36,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.5.2",
-    "sass": "^1.69.5",
-    "vite": "^5.0.10",
-    "vue": "^3.3.13",
-    "vue-json-pretty": "^2.3.0"
-  },
-  "dependencies": {
-    "lodash.clonedeep": "^4.5.0"
+    "@babel/core": "^7.24.4",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "lodash.clonedeep": "^4.5.0",
+    "sass": "^1.74.1",
+    "vite": "^5.2.8",
+    "vue": "^3.4.21",
+    "vue-json-pretty": "^2.4.0"
   }
 }

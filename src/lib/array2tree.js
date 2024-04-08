@@ -1,5 +1,3 @@
-import cloneDeep from 'lodash.clonedeep'
-
 const array2tree = (array, options) => {
   if (!Array.isArray(array)) return array
 
@@ -15,12 +13,11 @@ const array2tree = (array, options) => {
   }
 
   const { parentKey, idKey, childrenKey, leafKey, leafValue, deepKey, deepValue } = options
-  const clone = cloneDeep(array)
-  const roots = clone.filter(a => !a[parentKey] || !clone.some(b => b[idKey] === a[parentKey]))
+  const roots = array.filter(a => !a[parentKey] || !array.some(b => b[idKey] === a[parentKey]))
 
   const tree = (arr, deep = 0) => {
     return arr.map(c => {
-      const children = clone.filter(a => c[idKey] === a[parentKey])
+      const children = array.filter(a => c[idKey] === a[parentKey])
       c[deepKey] = deep
       if (children.length) {
         c[childrenKey] = children
