@@ -2,9 +2,8 @@
 
 An array have children key and parentId key like tree.
 
-## warning
-
-- To keep RAW data please use [lodash.clonedeep]
+- [demo] of tree-array
+- Use [lodash.clonedeep] to keep data raw
 - May NOT be suitable for big data
 
 ## install
@@ -159,5 +158,6 @@ The data format **MUST** like example with key defined in options.
 > Yueming Fang
 > 2022-09-04
 
+[demo]: https://axolo.github.io/tree-array/
 [lodash.clonedeep]: https://www.npmjs.com/package/lodash.clonedeep
 [transpileDependencies]: https://cli.vuejs.org/config/#transpiledependencies

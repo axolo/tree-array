@@ -30,7 +30,7 @@ export default {
       index: 0,
       tests:[
         { name: 'array', result: array },
-        { name: 'array2tree', result: array2tree(array) },
+        { name: 'array2tree', result: array2tree(cloneDeep(array)) },
         { name: 'arrayParents', result: arrayParents('chartIndexActiveMy', array) },
         { name: 'arrayNode', result: arrayNode(array, 'chartIndexActiveMy') },
         { name: 'arrayDeep', result: arrayDeep(array) },
@@ -41,7 +41,7 @@ export default {
         { name: 'treeNode', result: treeNode(tree, 'chartProjectMyTwo') },
         { name: 'treePath', result: treePath(tree, 'chartProjectMyTwo') },
         { name: 'treeDeep', result: treeDeep(tree) },
-        { name: 'tree2array2tree', result: array2tree(tree2array(tree)) }
+        { name: 'tree2array2tree', result: array2tree(tree2array(cloneDeep(tree))) }
       ]
     }
   }
@@ -49,14 +49,23 @@ export default {
 </script>
 
 <template>
-  <div class="axolo-tree-array">
+  <div class="tree-array">
     <div class="head">
       <h3>
         <a :href="homepage" target="_blank">{{ name }}</a>
       </h3>
+      <div class="tip">
+        Use <a href="https://www.npmjs.com/package/lodash.clonedeep" target="_blank">lodash.clonedeep</a> to keep data raw.
+        Read <a href="https://github.com/axolo/tree-array">docs</a> for help more.
+      </div>
       <div class="navi">
         <ul>
-          <li v-for="(item, i) in tests" :key="i" :class="{ active: index === i }" @click="index = i">
+          <li
+            v-for="(item, i) in tests"
+            :key="i"
+            :class="{ active: index === i }"
+            @click="index = i"
+          >
             {{ item.name }}
           </li>
         </ul>
@@ -72,60 +81,62 @@ export default {
 </template>
 
 <style lang="scss">
-body {
-  margin: 0;
-  padding: 0;
-}
-.axolo-tree-array {
-  padding: 0 0.5em;
-  .axolo-json-editor {
-    .cm-scroller {
-      font-size: 0.9em;
-      font-family: Consolas, 'Courier New', Courier, monospace;
-    }
-  }
+.tree-array {
   .head {
     position: sticky;
     z-index: 20;
     top: 0;
-    padding: 0.5em 0;
     background-color: #fff;
-    a {
-      color: #333;
-      text-decoration: none;
-    }
-  }
-  .navi {
-    ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    h3 {
       margin: 0;
-      padding: 0.25em 0;
-      list-style: none;
-      display: flex;
-      align-items: center;
-      li {
-        cursor: pointer;
-        padding: 0.25em 0.5em;
-        display: inline-block;
-        text-align: center;
-        border: 1px solid#666;
-        color: #fff;
-        background-color: #666;
+      a {
+        color: #333;
+        text-decoration: none;
       }
-      li.active {
-        color: #666;
-        background-color: #fff;
+    }
+    .tip {
+      color: #666;
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+    .navi {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          flex: auto;
+          cursor: pointer;
+          padding: 0.25rem 0.5rem;
+          display: inline-block;
+          text-align: center;
+          border: 1px solid#666;
+          color: #fff;
+          background-color: #666;
+        }
+        li.active {
+          color: #666;
+          background-color: #fff;
+        }
       }
     }
   }
   .body {
-    max-height: 40em;
-    padding: 0.5em;
+    max-height: 40rem;
+    padding: 0.5rem;
     overflow-y: scroll;
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
     background-color: #f8f8f8;
   }
   .foot {
-    margin: 1em 0;
+    margin: 1rem 0;
     color: #666;
     font-size: small;
     font-style: normal;
