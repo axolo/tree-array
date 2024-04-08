@@ -7,7 +7,7 @@
   "type": "module",
   "main": "dist/index.js",
   "files": [
-    "dist"
+    "npm"
   ],
   "keywords": [
     "random id",
@@ -33,7 +33,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:npm": "vite build --config npm.config.js"
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",

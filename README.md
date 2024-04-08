@@ -44,19 +44,19 @@ const tree = array2tree(tree2array([/* tree */]))
 
 ## api
 
-|                 function                  | return |                           description                           |
-| ----------------------------------------- | ------ | --------------------------------------------------------------- |
-| `randomId(prefix = '')`                   | string | generate random id with prefix, like `my_r85cvfpqp8`            |
-| `array2tree(array, [options])`            | tree   | array to tree with leaf and deep                                |
-| `arrayDeep(array, [options], [deep = 1])` | int    | get max deep of array                                           |
-| `arrayNode(array, id, [options])`         | array  | get path of id from array by id, like `[id1, id12, id121]`      |
-| `arrayParents(id, array, [options])`      | array  | find parents from array by id                                   |
-| `tree2array(tree, [options])`             | array  | tree to array and generate id, parentId and leaf when undefined |
-| `treeFilter(tree, condition, [options])`  | array  | get new tree filter by condition function: `i => !i.disabled`   |
-| `treeDeep(tree, [options], [deep = 1])`   | int    | get max deep of tree                                            |
-| `treeNode(tree, id, [options])`           | array  | get path of id from tree by id, like `[id1, id12, id121]`       |
-| `treePath(tree, id, [options])`           | array  | get path of index from tree by id, like `[0, 2, 1]`             |
-| `treeSub(tree, id, [options])`            | object | get sub tree by id, like `{ id, parentId, children: [] }`       |
+|                 function                  | return |                             description                             |
+| ----------------------------------------- | ------ | ------------------------------------------------------------------- |
+| `randomId(prefix = '')`                   | string | generate random id with prefix, like `my_r85cvfpqp8`                |
+| `array2tree(array, [options])`            | tree   | array to tree with leaf and deep                                    |
+| `arrayDeep(array, [options], [deep = 1])` | int    | get max deep of array                                               |
+| `arrayNode(array, id, [options])`         | array  | get path of id from array by id, like `[id1, id12, id121]`          |
+| `arrayParents(id, array, [options])`      | array  | find parents from array by id                                       |
+| `tree2array(tree, [options])`             | array  | tree to array and generate id, parentId and leaf when undefined     |
+| `treeFilter(tree, condition, [options])`  | array  | get new tree filter by condition function like `node => !node.hide` |
+| `treeDeep(tree, [options], [deep = 1])`   | int    | get max deep of tree                                                |
+| `treeNode(tree, id, [options])`           | array  | get path of id from tree by id, like `[id1, id12, id121]`           |
+| `treePath(tree, id, [options])`           | array  | get path of index from tree by id, like `[0, 2, 1]`                 |
+| `treeSub(tree, id, [options])`            | object | get sub tree by id, like `{ id, parentId, children: [] }`           |
 
 ## options
 
@@ -108,7 +108,7 @@ The data format **MUST** like example with key defined in options.
 }, {
   "id": "smileIndex",
   "path": "/smile/index",
-  "query": "test",
+  "test": true,
   "parentId": "smile"
 }]
 ```
