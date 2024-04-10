@@ -1,5 +1,6 @@
 import randomId from './random-id'
 import array2tree from './array2tree'
+import arrayTrace from './array-trace'
 import arrayDeep from './array-deep'
 import arrayNode from './array-node'
 import arrayParents from './array-parents'
@@ -13,6 +14,7 @@ import treeSub from './tree-sub'
 export {
   randomId,
   array2tree,
+  arrayTrace,
   arrayDeep,
   arrayNode,
   arrayParents,

@@ -15,7 +15,8 @@ import {
   treeSub,
   treeNode,
   treePath,
-  treeDeep
+  treeDeep,
+  arrayTrace
 } from '../lib'
 
 export default {
@@ -31,9 +32,10 @@ export default {
       tests:[
         { name: 'array', result: array },
         { name: 'array2tree', result: array2tree(cloneDeep(array)) },
-        { name: 'arrayParents', result: arrayParents('chartIndexActiveMy', array) },
+        { name: 'arrayTrace', result: arrayTrace(array, 'chartIndexActiveMy') },
         { name: 'arrayNode', result: arrayNode(array, 'chartIndexActiveMy') },
         { name: 'arrayDeep', result: arrayDeep(array) },
+        { name: 'arrayParents', result: arrayParents('chartIndexActiveMy', array) },
         { name: 'tree', result: tree },
         { name: 'tree2array', result: tree2array(tree) },
         { name: 'treeFilter', result: treeFilter(cloneDeep(tree), i => !i.test) },
