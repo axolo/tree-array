@@ -2,7 +2,6 @@ export default {
   title: 'tree-array',
   description: 'An array have children key and parentId key like tree.',
   base: '/tree-array/',
-  outDir: './.vitepress/dist/tree-array',
   lastUpdated: true,
   head: [
     ['link', { rel: 'icon', href: 'tree.svg' }]
