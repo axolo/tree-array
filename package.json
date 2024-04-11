@@ -1,13 +1,13 @@
 {
   "name": "@axolo/tree-array",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "An array have children key and parentId key like tree.",
   "author": "Yueming Fang",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
   "files": [
-    "npm"
+    "dist"
   ],
   "keywords": [
     "random id",
