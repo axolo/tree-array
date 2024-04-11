@@ -2,9 +2,9 @@
 
 An array have children key and parentId key like tree.
 
-- [demo] of tree-array
+- Read [docs] for help more
 - Use [lodash.clonedeep] to keep data raw
-- May NOT be suitable for big data
+- May not be suitable for big data
 
 ## install
 
@@ -46,7 +46,7 @@ const tree = array2tree(tree2array([/* tree */]))
 |                 function                  | return |                             description                             |
 | ----------------------------------------- | ------ | ------------------------------------------------------------------- |
 | `randomId(prefix = '')`                   | string | generate random id with prefix, like `my_r85cvfpqp8`                |
-| `array2tree(array, [options])`            | tree   | array to tree with leaf and deep                                    |
+| `array2tree(array, [options])`            | array  | array to tree with leaf and deep                                    |
 | `arrayTrace(array, id, [options])`        | array  | trace source of id from array                                       |
 | `arrayDeep(array, [options], [deep = 1])` | int    | get max deep of array                                               |
 | `arrayNode(array, id, [options])`         | array  | get path of id from array by id, like `[id1, id12, id121]`          |
@@ -159,6 +159,6 @@ The data format **MUST** like example with key defined in options.
 > Yueming Fang
 > 2022-09-04
 
-[demo]: https://axolo.github.io/tree-array/
+[docs]: https://axolo.github.io/tree-array/
 [lodash.clonedeep]: https://www.npmjs.com/package/lodash.clonedeep
 [transpileDependencies]: https://cli.vuejs.org/config/#transpiledependencies

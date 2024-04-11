@@ -1,0 +1,120 @@
+# 通用参数
+
+在功能函数中经常会见以下通用参数：
+
+|  名称   |     说明     |
+| ------- | ------------ |
+| options | 配置选项     |
+| tree    | 树状结构数据 |
+| array   | 数组结构数据 |
+
+## options
+
+配置选项是 `key-value` 形式的键值对，用于动态定义数据的关键键名。
+
+|    参数     |  类型  |  默认值  |      说明       |
+| ----------- | ------ | -------- | --------------- |
+| idKey       | string | id       | key of id       |
+| parentKey   | string | parentId | key of parentId |
+| childrenKey | string | children | key of children |
+| leafKey     | string | leaf     | key of leaf     |
+| leafValue   | any    | true     | value of leaf   |
+| deepKey     | string | deep     | key of deep     |
+| deepValue   | number | 0        | value of deep   |
+
+当对应键被定义时，其定义值覆盖默认值；键未定义的仍使用键默认值。如：
+
+```js
+{
+  idKey: 'key',
+  parentKey: 'parentKey',
+  leafKey: 'isLeaf',
+  deepKey: 'level'
+}
+```
+
+## tree
+
+树状结构数据，示例如下：
+
+```json
+[{
+  "id": "chart",
+  "path": "/chart",
+  "parentId": null,
+  "children": [{
+    "id": "chartIndex",
+    "path": "/chart/index",
+    "parentId": "chart",
+    "children": [{
+      "id": "chartIndexActive",
+      "path": "/chart/index/active",
+      "parentId": "chartIndex",
+      "children": [{
+        "id": "chartIndexActiveMy",
+        "path": "/chart/index/active/my",
+        "parentId": "chartIndexActive"
+      }]
+    }]
+  }, {
+    "id": "chartReview",
+    "path": "/chart/review",
+    "parentId": "chart"
+  }, {
+    "id": "chartProject",
+    "path": "/chart/project",
+    "parentId": "chart"
+  }]
+}, {
+  "id": "smile",
+  "path": "/smile",
+  "parentId": null,
+  "children": [{
+    "id": "smileIndex",
+    "path": "/smile/index",
+    "test": true,
+    "parentId": "smile"
+  }]
+}]
+```
+
+## array
+
+数组数据结构，示例如下：
+
+```json
+[{
+  "id": "chart",
+  "path": "/chart",
+  "parentId": null
+}, {
+  "id": "chartIndex",
+  "path": "/chart/index",
+  "parentId": "chart"
+}, {
+  "id": "chartIndexActive",
+  "path": "/chart/index/active",
+  "parentId": "chartIndex"
+}, {
+  "id": "chartIndexActiveMy",
+  "path": "/chart/index/active/my",
+  "parentId": "chartIndexActive"
+}, {
+  "id": "chartReview",
+  "path": "/chart/review",
+  "parentId": "chart"
+}, {
+  "id": "chartProject",
+  "path": "/chart/project",
+  "parentId": "chart"
+}, {
+  "id": "smile",
+  "path": "/smile",
+  "parentId": null
+}, {
+  "id": "smileIndex",
+  "path": "/smile/index",
+  "test": true,
+  "parentId": "smile"
+}]
+```

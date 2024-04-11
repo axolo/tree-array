@@ -19,7 +19,7 @@
     "array to tree",
     "tree2array",
     "tree to array",
-    "get parents",
+    "parents of tree",
     "deep of tree",
     "path of tree",
     "sub tree",
@@ -34,7 +34,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "build:npm": "vite build --config npm.config.js"
+    "build:npm": "vite build --config npm.config.js",
+    "dev:docs": "vitepress dev docs",
+    "build:docs": "vitepress build docs"
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",
@@ -42,6 +44,7 @@
     "lodash.clonedeep": "^4.5.0",
     "sass": "^1.74.1",
     "vite": "^5.2.8",
+    "vitepress": "^1.1.0",
     "vue": "^3.4.21",
     "vue-json-pretty": "^2.4.0"
   }
