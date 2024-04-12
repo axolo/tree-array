@@ -5,8 +5,8 @@
 |  名称   |     说明     |
 | ------- | ------------ |
 | options | 配置选项     |
-| tree    | 树状结构数据 |
 | array   | 列表结构数据 |
+| tree    | 树状结构数据 |
 
 ## options
 
@@ -32,6 +32,47 @@
   deepKey: 'level',
   deepValue: 1
 }
+```
+
+## array
+
+列表数据结构，示例如下：
+
+```json
+[{
+  "id": "chart",
+  "path": "/chart",
+  "parentId": null
+}, {
+  "id": "chartIndex",
+  "path": "/chart/index",
+  "parentId": "chart"
+}, {
+  "id": "chartIndexActive",
+  "path": "/chart/index/active",
+  "parentId": "chartIndex"
+}, {
+  "id": "chartIndexActiveMy",
+  "path": "/chart/index/active/my",
+  "parentId": "chartIndexActive"
+}, {
+  "id": "chartReview",
+  "path": "/chart/review",
+  "parentId": "chart"
+}, {
+  "id": "chartProject",
+  "path": "/chart/project",
+  "parentId": "chart"
+}, {
+  "id": "smile",
+  "path": "/smile",
+  "parentId": null
+}, {
+  "id": "smileIndex",
+  "path": "/smile/index",
+  "test": true,
+  "parentId": "smile"
+}]
 ```
 
 ## tree
@@ -76,46 +117,5 @@
     "test": true,
     "parentId": "smile"
   }]
-}]
-```
-
-## array
-
-列表数据结构，示例如下：
-
-```json
-[{
-  "id": "chart",
-  "path": "/chart",
-  "parentId": null
-}, {
-  "id": "chartIndex",
-  "path": "/chart/index",
-  "parentId": "chart"
-}, {
-  "id": "chartIndexActive",
-  "path": "/chart/index/active",
-  "parentId": "chartIndex"
-}, {
-  "id": "chartIndexActiveMy",
-  "path": "/chart/index/active/my",
-  "parentId": "chartIndexActive"
-}, {
-  "id": "chartReview",
-  "path": "/chart/review",
-  "parentId": "chart"
-}, {
-  "id": "chartProject",
-  "path": "/chart/project",
-  "parentId": "chart"
-}, {
-  "id": "smile",
-  "path": "/smile",
-  "parentId": null
-}, {
-  "id": "smileIndex",
-  "path": "/smile/index",
-  "test": true,
-  "parentId": "smile"
 }]
 ```

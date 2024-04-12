@@ -69,69 +69,56 @@ array2tree(cloneDeep(array)) // tree
 ```
 
 ```json [结果]
-[
-  {
-    "id": "chart",
-    "path": "/chart",
-    "parentId": null,
-    "deep": 0,
-    "children": [
-      {
-        "id": "chartIndex",
-        "path": "/chart/index",
-        "parentId": "chart",
-        "deep": 1,
-        "children": [
-          {
-            "id": "chartIndexActive",
-            "path": "/chart/index/active",
-            "parentId": "chartIndex",
-            "deep": 2,
-            "children": [
-              {
-                "id": "chartIndexActiveMy",
-                "path": "/chart/index/active/my",
-                "parentId": "chartIndexActive",
-                "deep": 3,
-                "leaf": true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "chartReview",
-        "path": "/chart/review",
-        "parentId": "chart",
-        "deep": 1,
+[{
+  "id": "chart",
+  "path": "/chart",
+  "parentId": null,
+  "deep": 0,
+  "children": [{
+    "id": "chartIndex",
+    "path": "/chart/index",
+    "parentId": "chart",
+    "deep": 1,
+    "children": [{
+      "id": "chartIndexActive",
+      "path": "/chart/index/active",
+      "parentId": "chartIndex",
+      "deep": 2,
+      "children": [{
+        "id": "chartIndexActiveMy",
+        "path": "/chart/index/active/my",
+        "parentId": "chartIndexActive",
+        "deep": 3,
         "leaf": true
-      },
-      {
-        "id": "chartProject",
-        "path": "/chart/project",
-        "parentId": "chart",
-        "deep": 1,
-        "leaf": true
-      }
-    ]
-  },
-  {
-    "id": "smile",
-    "path": "/smile",
-    "parentId": null,
-    "deep": 0,
-    "children": [
-      {
-        "id": "smileIndex",
-        "path": "/smile/index",
-        "test": true,
-        "parentId": "smile",
-        "deep": 1,
-        "leaf": true
-      }
-    ]
-  }
-]
+      }]
+    }]
+  }, {
+    "id": "chartReview",
+    "path": "/chart/review",
+    "parentId": "chart",
+    "deep": 1,
+    "leaf": true
+  }, {
+    "id": "chartProject",
+    "path": "/chart/project",
+    "parentId": "chart",
+    "deep": 1,
+    "leaf": true
+  }]
+}, {
+  "id": "smile",
+  "path": "/smile",
+  "parentId": null,
+  "deep": 0,
+  "children": [{
+    "id": "smileIndex",
+    "path": "/smile/index",
+    "test": true,
+    "parentId": "smile",
+    "deep": 1,
+    "leaf": true
+  }]
+}]
 ```
 :::
 
