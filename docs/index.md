@@ -2,7 +2,7 @@
 layout: home
 
 title: tree-array
-titleTemplate: JavaScript树使用工具
+titleTemplate: JavaScript树实用工具
 
 hero:
   name: tree-array

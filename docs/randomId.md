@@ -31,7 +31,7 @@ import { randomId } from '@axolo/tree-array'
 randomId('i_') // i_9fang05da21
 ```
 
-```text [返回]
+```text [结果]
 i_9fang05da21
 ```
 :::

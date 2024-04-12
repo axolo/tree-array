@@ -1,10 +1,10 @@
-# 数组溯源
+# 列表溯源
 
 ```js
 arrayTrace(array, id, [options])
 ```
 
-根据主键的值从数组中溯源，返回从根到自身溯源的顺序数组。
+根据主键的值从列表中溯源，返回从根到自身溯源的顺序数组。
 
 ## 参数
 
@@ -61,10 +61,10 @@ const array = [{
   test: true
 }]
 
-arrayTrace(array, 'chartIndexActiveMy')
+arrayTrace(array, 'chartIndexActiveMy') // array
 ```
 
-```json [返回]
+```json [结果]
 [
   {
     "id": "chart",

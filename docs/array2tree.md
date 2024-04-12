@@ -65,10 +65,10 @@ const array = [{
   test: true
 }]
 
-array2tree(cloneDeep(array))
+array2tree(cloneDeep(array)) // tree
 ```
 
-```json [返回]
+```json [结果]
 [
   {
     "id": "chart",
