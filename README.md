@@ -45,12 +45,11 @@ const tree = array2tree(tree2array([/* tree */]))
 
 |                 function                  | return |                             description                             |
 | ----------------------------------------- | ------ | ------------------------------------------------------------------- |
-| `randomId(prefix = '')`                   | string | generate random id with prefix, like `my_r85cvfpqp8`                |
+| `randomId(prefix = '')`                   | string | generate random id with prefix, like `i_fang05da21`                 |
 | `array2tree(array, [options])`            | array  | array to tree with leaf and deep                                    |
 | `arrayTrace(array, id, [options])`        | array  | trace source of id from array                                       |
 | `arrayDeep(array, [options], [deep = 1])` | int    | get max deep of array                                               |
 | `arrayNode(array, id, [options])`         | array  | get path of id from array by id, like `[id1, id12, id121]`          |
-| `arrayParents(id, array, [options])`      | array  | find parents from array by id                                       |
 | `tree2array(tree, [options])`             | array  | tree to array and generate id, parentId and leaf when undefined     |
 | `treeFilter(tree, condition, [options])`  | array  | get new tree filter by condition function like `node => !node.hide` |
 | `treeDeep(tree, [options], [deep = 1])`   | int    | get max deep of tree                                                |

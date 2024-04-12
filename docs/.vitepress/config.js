@@ -27,7 +27,7 @@ export default {
       text: '通用参数',
       link: '/param'
     }, {
-      text: '功能',
+      text: '函数',
       items: [
         { text: 'randomId', link: '/randomId' },
         { text: 'array2tree', link: '/array2tree' },
