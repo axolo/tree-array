@@ -6,21 +6,21 @@
 | ------- | ------------ |
 | options | 配置选项     |
 | tree    | 树状结构数据 |
-| array   | 数组结构数据 |
+| array   | 列表结构数据 |
 
 ## options
 
 配置选项是 `key-value` 形式的键值对，用于动态定义数据的关键键名。
 
-|    参数     |  类型  |  默认值  |      说明       |
-| ----------- | ------ | -------- | --------------- |
-| idKey       | string | id       | key of id       |
-| parentKey   | string | parentId | key of parentId |
-| childrenKey | string | children | key of children |
-| leafKey     | string | leaf     | key of leaf     |
-| leafValue   | any    | true     | value of leaf   |
-| deepKey     | string | deep     | key of deep     |
-| deepValue   | number | 0        | value of deep   |
+|    参数     |  类型  |  默认值  |    说明    |
+| ----------- | ------ | -------- | ---------- |
+| idKey       | string | id       | 主键名     |
+| parentKey   | string | parentId | 父键名     |
+| childrenKey | string | children | 子键名     |
+| leafKey     | string | leaf     | 叶子键名   |
+| leafValue   | any    | true     | 叶子值     |
+| deepKey     | string | deep     | 深度键名   |
+| deepValue   | number | 0        | 根级深度值 |
 
 当对应键被定义时，其定义值覆盖默认值；键未定义的仍使用键默认值。如：
 
@@ -29,7 +29,8 @@
   idKey: 'key',
   parentKey: 'parentKey',
   leafKey: 'isLeaf',
-  deepKey: 'level'
+  deepKey: 'level',
+  deepValue: 1
 }
 ```
 
@@ -80,7 +81,7 @@
 
 ## array
 
-数组数据结构，示例如下：
+列表数据结构，示例如下：
 
 ```json
 [{

@@ -20,6 +20,7 @@ const array2tree = (array, options) => {
       const children = array.filter(a => c[idKey] === a[parentKey])
       c[deepKey] = deep
       if (children.length) {
+        // c[leafKey] = !leafValue
         c[childrenKey] = children
         tree(children, deep + 1)
       } else {
