@@ -12,7 +12,7 @@ arrayDeep(array, [options], [deep = 1])
 | --------- | -------- | ---- | -------------------------------- |
 | `array`   | `array`  |      | [列表结构数据](./param.md#array) |
 | `options` | `object` |      | [配置选项](./param.md#options)   |
-| `deep`    | `number` | `1`  | 初始深度，最大深度在此基础上累加 |
+| `deep`    | `number` | `1`  | 初始深度，以此基础累加到最大深度 |
 
 ## 返回
 
