@@ -29,6 +29,6 @@
 }, {
   "id": "smileIndex",
   "path": "/smile/index",
-  "test": true,
-  "parentId": "smile"
+  "parentId": "smile",
+  "test": true
 }]

@@ -1,13 +1,91 @@
-# arrayTrace
-
-trace source of id from array
-
-## 调用
+# 数组溯源
 
 ```js
 arrayTrace(array, id, [options])
 ```
 
+根据主键的值从数组中溯源，返回从根到自身溯源的顺序数组。
+
+## 参数
+
+|   参数    |   类型   | 默认 |                        说明                         |
+| --------- | -------- | ---- | --------------------------------------------------- |
+| `array`   | `array`  |      | [列表结构数据](./param.md#array)                    |
+| `id`      | `any`    |      | [主键](./param.md#id)的值，如：`chartIndexActiveMy` |
+| `options` | `object` |      | [配置选项](./param.md#options)                      |
+
 ## 返回
 
-array
+| 参数 |  类型   |           说明           |
+| ---- | ------- | ------------------------ |
+| *    | `array` | 从根到自身溯源的顺序数组 |
+
+## 示例
+
+::: code-group
+```js [调用]
+import { arrayTrace } from '@axolo/tree-array'
+
+const array = [{
+  id: 'chart',
+  path: '/chart',
+  parentId: null
+}, {
+  id: 'chartIndex',
+  path: '/chart/index',
+  parentId: 'chart'
+}, {
+  id: 'chartIndexActive',
+  path: '/chart/index/active',
+  parentId: 'chartIndex'
+}, {
+  id: 'chartIndexActiveMy',
+  path: '/chart/index/active/my',
+  parentId: 'chartIndexActive'
+}, {
+  id: 'chartReview',
+  path: '/chart/review',
+  parentId: 'chart'
+}, {
+  id: 'chartProject',
+  path: '/chart/project',
+  parentId: 'chart'
+}, {
+  id: 'smile',
+  path: '/smile',
+  parentId: null
+}, {
+  id: 'smileIndex',
+  path: '/smile/index',
+  parentId: 'smile',
+  test: true
+}]
+
+arrayTrace(array, 'chartIndexActiveMy')
+```
+
+```json [返回]
+[
+  {
+    "id": "chart",
+    "path": "/chart",
+    "parentId": null
+  },
+  {
+    "id": "chartIndex",
+    "path": "/chart/index",
+    "parentId": "chart"
+  },
+  {
+    "id": "chartIndexActive",
+    "path": "/chart/index/active",
+    "parentId": "chartIndex"
+  },
+  {
+    "id": "chartIndexActiveMy",
+    "path": "/chart/index/active/my",
+    "parentId": "chartIndexActive"
+  }
+]
+```
+:::
