@@ -10,7 +10,7 @@ treeDeep(tree, [options], [deep = 1])
 
 |   参数    |   类型   | 默认 |               说明               |
 | --------- | -------- | ---- | -------------------------------- |
-| `tree`    | `tree`   |      | [树状结构数据](./param.md#tree)  |
+| `tree`    | `array`  |      | [树状结构数据](./param.md#tree)  |
 | `options` | `object` |      | [配置选项](./param.md#options)   |
 | `deep`    | `number` | `1`  | 初始深度，以此基础累加到最大深度 |
 

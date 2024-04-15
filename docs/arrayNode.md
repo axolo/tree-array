@@ -1,4 +1,4 @@
-# 列表节点
+# 列表溯源节点
 
 ```js
 arrayNode(array, id, [options])

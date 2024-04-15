@@ -1,4 +1,4 @@
-# 树节点
+# 树溯源节点
 
 ```js
 treeNode(tree, id, [options])
@@ -10,7 +10,7 @@ treeNode(tree, id, [options])
 
 |   参数    |   类型   | 默认 |                        说明                        |
 | --------- | -------- | ---- | -------------------------------------------------- |
-| `tree`    | `tree`   |      | [树状结构数据](./param.md#tree)                    |
+| `tree`    | `array`  |      | [树状结构数据](./param.md#tree)                    |
 | `id`      | `any`    |      | [主键](./param.md#id)的值，如：`chartProjectMyTwo` |
 | `options` | `object` |      | [配置选项](./param.md#options)                     |
 
@@ -97,10 +97,10 @@ treeNode(tree, 'chartProjectMyTwo') // array of id
 
 ```json [结果]
 [
-"chart",
-"chartProject",
-"chartProjectMy",
-"chartProjectMyTwo"
+  "chart",
+  "chartProject",
+  "chartProjectMy",
+  "chartProjectMyTwo"
 ]
 ```
 :::
