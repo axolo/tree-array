@@ -45,7 +45,7 @@ const tree = array2tree(tree2array([/* tree */]))
 
 |                 function                  | return |                             description                             |
 | ----------------------------------------- | ------ | ------------------------------------------------------------------- |
-| `randomId(prefix = '')`                   | string | generate random id with prefix, like `i_fang05da21`                 |
+| `randomId(prefix = '')`                   | string | generate random id with prefix, like `i_9fang05da21`                |
 | `array2tree(array, [options])`            | array  | array to tree with leaf and deep                                    |
 | `arrayTrace(array, id, [options])`        | array  | trace source of id from array                                       |
 | `arrayDeep(array, [options], [deep = 1])` | int    | get max deep of array                                               |

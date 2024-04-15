@@ -1,6 +1,6 @@
 # 简介
 
-`tree-array` 是一组久经考验的 `JavaScript` 树状数组结构实用工具集合。
+`tree-array` 是一组久经考验的 `JavaScript` 树状结构数据实用工具集合。
 
 ::: tip 深拷贝
 推荐使用 [lodash.clonedeep] 深拷贝，以避免原始数据遭到不必要的篡改。
