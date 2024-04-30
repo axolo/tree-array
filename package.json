@@ -44,7 +44,7 @@
     "lodash.clonedeep": "^4.5.0",
     "sass": "^1.74.1",
     "vite": "^5.2.8",
-    "vitepress": "^1.1.0",
+    "vitepress": "^1.1.4",
     "vue": "^3.4.21",
     "vue-json-pretty": "^2.4.0"
   }

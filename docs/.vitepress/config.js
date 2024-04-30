@@ -12,6 +12,9 @@ export default {
     search: {
       provider: 'local'
     },
+    nav: [
+      { text: '博客', link: 'https://axolo.github.io' }
+    ],
     socialLinks: [{
       icon: 'github',
       link: 'https://github.com/axolo/tree-array'
