@@ -6,7 +6,7 @@ const treeSub = (tree, id, options) => {
     if (tree[i][idKey] === id) {
       return tree[i]
     } else if (tree[i][childrenKey] && tree[i][childrenKey].length > 0) {
-      const result = treeSub(tree[i][childrenKey], id)
+      const result = treeSub(tree[i][childrenKey], id, options)
       if (result) {
         return result
       }
