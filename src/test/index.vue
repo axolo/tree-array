@@ -39,7 +39,7 @@ export default {
         { name: 'tree', result: tree },
         { name: 'tree2array', result: tree2array(tree) },
         { name: 'treeFilter', result: treeFilter(cloneDeep(tree), i => !i.test) },
-        { name: 'treeSub', result: treeSub(tree, 'chartIndex') },
+        { name: 'treeSub', result: treeSub(tree, 'chartIndexActive') },
         { name: 'treeNode', result: treeNode(tree, 'chartProjectMyTwo') },
         { name: 'treePath', result: treePath(tree, 'chartProjectMyTwo') },
         { name: 'treeDeep', result: treeDeep(tree) },

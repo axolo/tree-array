@@ -92,27 +92,18 @@ const tree = [{
   }]
 }]
 
-treeSub(tree, 'chartIndex') // object of sub tree
+treeSub(tree, 'chartIndexActive') // object of sub tree
 ```
 
 ```json [结果]
 {
-  "id": "chartIndex",
-  "path": "/chart/index",
-  "parentId": "chart",
-  "children": [{
-    "id": "chartIndexTop",
-    "path": "/chart/index/top",
-    "parentId": "chartIndex"
-  }, {
-    "id": "chartIndexActive",
-    "path": "/chart/index/active",
-    "parentId": "chartIndex",
+  "id": "chartIndexActive",
+  "path": "/chart/index/active",
+  "parentId": "chartIndex",
     "children": [{
-      "id": "chartIndexActiveMy",
-      "path": "/chart/index/active/my",
-      "parentId": "chartIndexActive"
-    }]
+    "id": "chartIndexActiveMy",
+    "path": "/chart/index/active/my",
+    "parentId": "chartIndexActive"
   }]
 }
 ```
