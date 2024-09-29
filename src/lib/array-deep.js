@@ -1,5 +1,7 @@
+import config from './config'
+
 const arrayDeep = (array, options, deep = 1) => {
-  options = { idKey: 'id', parentKey: 'parentId', ...options }
+  options = { ...config, ...options }
   const { idKey, parentKey } = options
   let temp = [...array]
   temp = array.filter(a => temp.some(b => b[parentKey] === a[idKey]))

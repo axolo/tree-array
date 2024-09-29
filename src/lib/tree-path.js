@@ -1,5 +1,7 @@
+import config from './config'
+
 const treePath = (tree, targetId, options, currentPath = []) => {
-  options = { idKey: 'id', childrenKey: 'children', ...options }
+  options = { ...config, ...options }
   const { idKey, childrenKey } = options
 
   for (let i = 0; i < tree.length; i++) {

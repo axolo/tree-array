@@ -1,5 +1,7 @@
+import config from './config'
+
 const treeDeep = (tree, options, deep = 1) => {
-  options = { childrenKey: 'children', ...options }
+  options = { ...config, ...options }
   const { childrenKey } = options
   let has = false
   let temp = []

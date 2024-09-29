@@ -1,17 +1,8 @@
+import config from './config'
+
 const array2tree = (array, options) => {
   if (!Array.isArray(array)) return array
-
-  options = {
-    idKey: 'id',
-    parentKey: 'parentId',
-    childrenKey: 'children',
-    leafKey: 'leaf',
-    leafValue: true,
-    deepKey: 'deep',
-    deepValue: 0,
-    ...options
-  }
-
+  options = { ...config, ...options }
   const { parentKey, idKey, childrenKey, leafKey, leafValue, deepKey, deepValue } = options
   const roots = array.filter(a => !a[parentKey] || !array.some(b => b[idKey] === a[parentKey]))
 

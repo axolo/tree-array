@@ -1,5 +1,7 @@
+import config from './config'
+
 const arrayParents = (id, array = [], options, parents = []) => {
-  options = { idKey: 'id', parentKey: 'parentId', ...options }
+  options = { ...config, ...options }
   const { idKey, parentKey } = options
   const item = array.find(a => a[idKey] === id)
   if (!item || !item[idKey]) return parents

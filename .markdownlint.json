@@ -1,3 +1,4 @@
 {
-  "blanks-around-fences": false
+  "blanks-around-fences": false,
+  "line_length": false
 }

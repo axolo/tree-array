@@ -1,6 +1,6 @@
 {
   "name": "@axolo/tree-array",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "An array have children key and parentId key like tree.",
   "author": "Yueming Fang",
   "license": "MIT",
@@ -9,6 +9,23 @@
   "files": [
     "dist"
   ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:npm": "vite build --config npm.config.js",
+    "dev:docs": "vitepress dev docs",
+    "build:docs": "vitepress build docs"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "lodash.clonedeep": "^4.5.0",
+    "sass": "^1.79.4",
+    "vite": "^5.4.8",
+    "vitepress": "^1.3.4",
+    "vue": "^3.5.10",
+    "vue-json-pretty": "^2.4.0"
+  },
   "keywords": [
     "random id",
     "random key",
@@ -29,23 +46,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/axolo/tree-array.git"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "build:npm": "vite build --config npm.config.js",
-    "dev:docs": "vitepress dev docs",
-    "build:docs": "vitepress build docs"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.24.4",
-    "@vitejs/plugin-vue": "^5.0.4",
-    "lodash.clonedeep": "^4.5.0",
-    "sass": "^1.74.1",
-    "vite": "^5.2.8",
-    "vitepress": "^1.1.4",
-    "vue": "^3.4.21",
-    "vue-json-pretty": "^2.4.0"
   }
 }

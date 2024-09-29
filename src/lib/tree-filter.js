@@ -1,5 +1,7 @@
+import config from './config'
+
 const filterTree = (tree, condition, options) => {
-  options = { childrenKey: 'children', ...options }
+  options = { ...config, ...options }
   const { childrenKey } = options
 
   return tree.filter(node => {

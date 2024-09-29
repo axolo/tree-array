@@ -1,5 +1,7 @@
+import config from './config'
+
 const treeNode = (tree, targetId, options, currentPath = []) => {
-  options = { idKey: 'id', childrenKey: 'children', ...options }
+  options = { ...config, ...options }
   const { idKey, childrenKey } = options
 
   for (let node of tree) {

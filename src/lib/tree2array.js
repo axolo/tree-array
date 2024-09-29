@@ -1,16 +1,9 @@
+import config from './config'
 import randomId from "./random-id"
 
 const tree2array = (tree, options, parentId = null) => {
   if (!Array.isArray(tree)) return tree
-
-  options = {
-    idKey: 'id',
-    childrenKey: 'children',
-    parentKey: 'parentId',
-    leafKey: 'leaf',
-    leafValue: true,
-    ...options
-  }
+  options = { ...config, ...options }
   const { idKey, childrenKey, parentKey, leafKey, leafValue } = options
 
   let result = []
