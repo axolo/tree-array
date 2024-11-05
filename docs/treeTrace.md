@@ -1,10 +1,10 @@
-# 树溯源主键
+# 树溯源对象
 
 ```js
-treeNode(tree, id, [options])
+treeTrace(tree, id, [options])
 ```
 
-根据主键的值从树中溯源，返回**从根到自身**顺序的主键数组，如：`[id1, id12, id121]`。
+根据主键的值从树中溯源，返回**从根到自身**顺序的对象数组，如：`[object1, object12, object121]`。
 
 ## 参数
 
@@ -18,13 +18,13 @@ treeNode(tree, id, [options])
 
 | 参数 |  类型   |             说明             |
 | ---- | ------- | ---------------------------- |
-| *    | `array` | 从根到自身顺序溯源的主键数组 |
+| *    | `array` | 从根到自身顺序溯源的对象数组 |
 
 ## 示例
 
 ::: code-group
 ```js [调用]
-import { treeNode } from '@axolo/tree-array'
+import { treeTrace } from '@axolo/tree-array'
 
 const tree = [{
   id: 'home',
@@ -92,15 +92,35 @@ const tree = [{
   }]
 }]
 
-treeNode(tree, 'chartProjectMyTwo') // array of id
+treeTrace(tree, 'chartProjectMyTwo') // array of id
 ```
 
 ```json [结果]
 [
-  "chart",
-  "chartProject",
-  "chartProjectMy",
-  "chartProjectMyTwo"
+  {
+    "id": "chart",
+    "path": "/chart",
+    "parentId": null,
+    "children": null
+  },
+  {
+    "id": "chartProject",
+    "path": "/chart/project",
+    "parentId": "chart",
+    "children": null
+  },
+  {
+    "id": "chartProjectMy",
+    "path": "/chart/project/my",
+    "parentId": "chartProject",
+    "children": null
+  },
+  {
+    "id": "chartProjectMyTwo",
+    "path": "/chart/project/my/two",
+    "parentId": "chartProjectMy",
+    "children": null
+  }
 ]
 ```
 :::

@@ -9,14 +9,15 @@ import {
   array2tree,
   arrayParents,
   arrayNode,
+  arrayTrace,
   arrayDeep,
   tree2array,
   treeFilter,
   treeSub,
   treeNode,
   treePath,
-  treeDeep,
-  arrayTrace
+  treeTrace,
+  treeDeep
 } from '../lib'
 
 export default {
@@ -42,6 +43,7 @@ export default {
         { name: 'treeSub', result: treeSub(tree, 'chartIndexActive') },
         { name: 'treeNode', result: treeNode(tree, 'chartProjectMyTwo') },
         { name: 'treePath', result: treePath(tree, 'chartProjectMyTwo') },
+        { name: 'treeTrace', result: treeTrace(tree, 'chartProjectMyTwo') },
         { name: 'treeDeep', result: treeDeep(tree) },
         { name: 'tree2array2tree', result: array2tree(tree2array(cloneDeep(tree))) }
       ]

@@ -1,4 +1,4 @@
-# 列表溯源
+# 列表溯源对象
 
 ```js
 arrayTrace(array, id, [options])

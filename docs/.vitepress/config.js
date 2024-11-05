@@ -40,6 +40,7 @@ export default {
         { text: 'tree2array', link: '/tree2array' },
         { text: 'treeDeep', link: '/treeDeep' },
         { text: 'treeNode', link: '/treeNode' },
+        { text: 'treeTrace', link: '/treeTrace' },
         { text: 'treePath', link: '/treePath' },
         { text: 'treeFilter', link: '/treeFilter' },
         { text: 'treeSub', link: '/treeSub' }

@@ -4,11 +4,11 @@ const treeSub = (tree, id, options) => {
   options = { ...config, ...options }
   const { idKey, childrenKey } = options
 
-  for (let i = 0; i < tree.length; i++) {
-    if (tree[i][idKey] === id) {
-      return tree[i]
-    } else if (tree[i][childrenKey] && tree[i][childrenKey].length > 0) {
-      const result = treeSub(tree[i][childrenKey], id, options)
+  for (const node of tree) {
+    if (node[idKey] === id) {
+      return node
+    } else if (node[childrenKey] && node[childrenKey].length > 0) {
+      const result = treeSub(node[childrenKey], id, options)
       if (result) {
         return result
       }

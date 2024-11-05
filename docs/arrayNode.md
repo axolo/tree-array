@@ -1,4 +1,4 @@
-# 列表溯源节点
+# 列表溯源主键
 
 ```js
 arrayNode(array, id, [options])

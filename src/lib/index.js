@@ -9,6 +9,7 @@ import treeFilter from './tree-filter'
 import treeDeep from './tree-deep'
 import treeNode from './tree-node'
 import treePath from './tree-path'
+import treeTrace from './tree-trace'
 import treeSub from './tree-sub'
 
 export {
@@ -23,5 +24,6 @@ export {
   treeDeep,
   treeNode,
   treePath,
+  treeTrace,
   treeSub
 }

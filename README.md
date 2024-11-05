@@ -43,19 +43,20 @@ const tree = array2tree(tree2array([/* tree */]))
 
 ## api
 
-|                 function                  | return |                             description                             |
-| ----------------------------------------- | ------ | ------------------------------------------------------------------- |
-| `randomId(prefix = '')`                   | string | generate random id with prefix, like `i_9fang05da21`                |
-| `array2tree(array, [options])`            | array  | array to tree with leaf and deep                                    |
-| `arrayTrace(array, id, [options])`        | array  | trace source of id from array                                       |
-| `arrayDeep(array, [options], [deep = 1])` | int    | get max deep of array                                               |
-| `arrayNode(array, id, [options])`         | array  | get path of id from array by id, like `[id1, id12, id121]`          |
-| `tree2array(tree, [options])`             | array  | tree to array and generate id, parentId and leaf when undefined     |
-| `treeFilter(tree, condition, [options])`  | array  | get new tree filter by condition function like `node => !node.hide` |
-| `treeDeep(tree, [options], [deep = 1])`   | int    | get max deep of tree                                                |
-| `treeNode(tree, id, [options])`           | array  | get path of id from tree by id, like `[id1, id12, id121]`           |
-| `treePath(tree, id, [options])`           | array  | get path of index from tree by id, like `[0, 2, 1]`                 |
-| `treeSub(tree, id, [options])`            | object | get sub tree by id, like `{ id, parentId, children: [] }`           |
+|                 function                  | return |                                    description                                    |
+| ----------------------------------------- | ------ | --------------------------------------------------------------------------------- |
+| `randomId(prefix = '')`                   | string | generate random id with prefix, like `i_9fang05da21`                              |
+| `array2tree(array, [options])`            | array  | array to tree with leaf and deep                                                  |
+| `arrayDeep(array, [options], [deep = 1])` | int    | get max deep of array                                                             |
+| `arrayTrace(array, id, [options])`        | array  | trace source of node by id from array, like `[object1, object12, object121]`      |
+| `arrayNode(array, id, [options])`         | array  | get path of id from array by id, like `[id1, id12, id121]`                        |
+| `tree2array(tree, [options])`             | array  | tree to array and generate id, parentId and leaf when undefined                   |
+| `treeDeep(tree, [options], [deep = 1])`   | int    | get max deep of tree                                                              |
+| `treeFilter(tree, condition, [options])`  | array  | get new tree filter by condition function like `node => !node.hide`               |
+| `treePath(tree, id, [options])`           | array  | get path of index from tree by id, like `[0, 2, 1]`                               |
+| `treeNode(tree, id, [options])`           | array  | get path of id from tree by id, like `[id1, id12, id121]`                         |
+| `treeTrace(tree, id, [options])`          | array  | get path of node as object from tree by id, like `[object1, object12, object121]` |
+| `treeSub(tree, id, [options])`            | object | get sub tree by id, like `{ id, parentId, children: [] }`                         |
 
 ## options
 
