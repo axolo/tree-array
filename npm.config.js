@@ -1,13 +1,14 @@
-import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
   build: {
     copyPublicDir: false,
-		lib: {
-			entry: fileURLToPath(new URL('./src/lib/index.js', import.meta.url)),
-			name: 'AxoloTreeArray',
-			fileName: 'index'
-		}
+    minify: 'terser',
+    lib: {
+      entry: 'src/lib/index.js',
+      name: 'TreeArray',
+      formats: ['es', 'umd'],
+      fileName: (format) => `tree-array.${format}.js`
+    }
   }
 })

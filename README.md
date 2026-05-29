@@ -1,6 +1,6 @@
 # tree-array
 
-An array have children key and parentId key like tree.
+Array to tree, tree to array and so on.
 
 - Read [docs] for help more
 - Use [lodash.clonedeep] to keep data raw
@@ -155,9 +155,6 @@ The data format **MUST** like example with key defined in options.
   }]
 }]
 ```
-
-> Yueming Fang
-> 2022-09-04
 
 [docs]: https://axolo.github.io/tree-array/
 [lodash.clonedeep]: https://www.npmjs.com/package/lodash.clonedeep

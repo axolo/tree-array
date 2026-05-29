@@ -1,4 +1,4 @@
-import config from './config'
+import config from './config.js'
 
 const array2tree = (array, options) => {
   if (!Array.isArray(array)) return array
@@ -6,14 +6,18 @@ const array2tree = (array, options) => {
   const { parentKey, idKey, childrenKey, leafKey, leafValue, deepKey, deepValue } = options
   const roots = array.filter(a => !a[parentKey] || !array.some(b => b[idKey] === a[parentKey]))
 
-  const tree = (arr, deep = 0) => {
+  const tree = (arr, deep = 0, visited = new Set()) => {
     return arr.map(c => {
-      const children = array.filter(a => c[idKey] === a[parentKey])
+      const cId = c[idKey]
+      if (visited.has(cId)) {
+        c[leafKey] = leafValue
+        return c
+      }
+      visited.add(cId)
+      const children = array.filter(a => cId === a[parentKey])
       c[deepKey] = deep
       if (children.length) {
-        // c[leafKey] = !leafValue
-        c[childrenKey] = children
-        tree(children, deep + 1)
+        c[childrenKey] = tree(children, deep + 1, visited)
       } else {
         c[leafKey] = leafValue
       }
